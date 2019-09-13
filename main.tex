@@ -1,0 +1,213 @@
+% This is a CV template based on hipstercv. It has the added functionality of a timeline 
+\documentclass[bluebeige]{hipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, bluebeige
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage[T1]{fontenc}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.3\textwidth}
+\setlength{\rightcolwidth}{0.65\textwidth}
+
+%------------------------------------------------------------------
+\title{Hipster-CV}
+\author{\LaTeX{} Ninja}
+\date{March 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+
+
+\header{\bg{headerfontbox}{headerfontboxfont}{\LobsterTwo  Captain} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Jack Sparrow}}{\bg{headerfontbox}{headerfontboxfont}{\large Pirate}}{jack.jpg}{headerblue}{3.5cm}{2cm}
+
+
+
+%------------------------------------------------
+
+% this needs to be here so paracol will start
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.3}[0.65]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\bg{cvgreen}{white}{\LobsterTwo \huge Facts} \\
+\bg{cvgreen}{white}{personal} \\
+
+\begin{tabular}{ll}
+\faMale&Jack Sparrow \\
+\faGlobe& nationality: English  \\
+\faBirthdayCake&1690 \\
+\faMapMarker&on a ship \\
+\end{tabular}
+
+\vfill
+
+
+\bg{cvgreen}{white}{\LobsterTwo \huge Skills}
+\bigskip
+
+
+\begin{minipage}[t]{\leftcolwidth}
+\begin{tabular}{l | ll}
+\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+\end{tabular}
+\end{minipage}
+
+\vfill
+
+\bg{cvgreen}{white}{Interests}\\
+
+\bubblediagram{{\textbf{a pirate's} \\\textbf{life}},  the sea, pillaging, plundering, ships, stealing, hijacking, \textbf{The Black}\\ \textbf{Pearl}}
+
+\vfill
+
+\hspace{3cm} \color{labelcolour}{OS:} \hspace{0.5em}\icon{\faWindows}{labelcolour}{\Large} \hspace{0.5em} \icon{\faLinux}{labelcolour}{\Large} 
+
+\vfill
+
+\bg{cvgreen}{white}{IT \& programming} \\
+
+\begin{minipage}[t]{0.3\textwidth}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+\end{tabular}
+
+
+%\dashrule{}{}
+\end{minipage}
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+
+\vspace{2em}
+
+\scalebox{0.8}%
+{%
+% arguments: start/end - end/start - "Scale: how many steps" - colour of the circles
+% if directionality is mixed up, try switching start and end and recompile
+% if items "fall out of the line", you might have to little "steps"/scale (up the number)
+% if you need "too many", use scalebox to resize the whole timeline
+\begin{timelinehorizontal}{1721}{1708}{13}{timelinecolour}
+% arguments: year - colour - date - label - (distance to top) - (angle to side)
+% distance and angle can be used to arrange more items on the timeline manually
+% bc otherwise, on a horizontal timeline, they will overlap almost immediately
+\event{1709}{cvbeige}{03/04}{Captain of the Black Pearl}{4.5}{2}
+\event{1711}{cvbeige}{17.09.}{Bucaneering along happily}{3.5}{2}
+\event{1714}{cvbeige}{03/04}{Lost the ship}{2.5}{1}
+\event{1717}{cvbeige}{17.09.}{Got the ship back}{1.5}{0.5}
+% keep the items in order (by date) or it will cause problems
+\end{timelinehorizontal}
+}
+
+
+\vspace{4em}
+
+
+\begin{minipage}[t]{0.4\textwidth}
+\section*{Degrees}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{disney.png} \\
+    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{medal.jpeg} \\
+    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{medal.jpeg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.16\textwidth}
+\section*{Hobbies}
+% usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
+\hobbyicon{\color{iconcolour}\faFlask}{Rhum}{cvgreen}{\iconsize}{2em} \hfill
+\hobbyicon{\color{iconcolour}\faBook}{The Code}{cvorange}{\iconsize}{2em}
+
+\hobbyicon{\color{iconcolour}\faComment}{Parler}{cvpurple}{\iconsize}{2em} \hspace{1em}
+\hobbyicon{\color{iconcolour}\faBeer}{Beer}{headerblue}{\iconsize}{2em}
+\end{minipage}
+
+\vspace{4em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificates \& Grants}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    1708 & Captain's Certificates \\
+    1710 & Travel grant \\
+    1715--1716 & Grant from the Pirate's Company \\
+    1718 & Privateer's papers issued by the Crown
+\end{tabular}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Talks}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720). \\
+    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+\end{tabular}
+
+\end{minipage}
+
+\vspace{5em}
+
+% arguments: <line thickness>  <colour>    <size> <other colour> <label inside> <below> <where is the label> <percentage>
+\progressarc{2mm}{headerblue}{0.7cm}{cvbeige}{\large 70\%}{Python}{below}{70} \hfill
+\progressarc{2mm}{headerblue}{0.7cm}{cvbeige}{\large 85\%}{C++}{below}{85} \hfill
+\progressarc{2mm}{headerblue}{0.7cm}{cvbeige}{\large 50\%}{Teamwork}{below}{50} \hfill
+\progressarc{2mm}{headerblue}{0.7cm}{cvbeige}{\large 60\%}{Parler}{below}{60}
+
+
+%\progressarc{2mm}{headerblue}{1cm}{cvbeige}{\large\bf \textbf{.cpp}}{Object-Oriented \\ Programming}{below}{40}
+
+% you need some vspace so the sidebar will be filled in for the whole page
+\vspace{3em}
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Jack Sparrow \icon{\faEnvelopeO}{cvpurple}{} The Black Pearl \icon{\faMapMarker}{cvpurple}{} Tortuga \icon{\faPhone}{cvpurple}{} 0099/333 5647380 \newline\icon{\faAt}{cvpurple}{} \protect\url{jack@sparrow.com}
+}
+\end{center}
+\end{minipage}
+
+
+\end{paracol}
+
+\end{document}
