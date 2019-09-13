@@ -8,16 +8,15 @@ These images are in the CV just for demonstration.
 Please replace them with your own photos and logos if you use this template!
 
 # Preview 
-![Timeline CV](https://github.com/latex-ninja/hipster-cv/blob/master/previews/modern-simple-cv.png)
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
-		<th><code>without image</code> and <code>with image</code></th>
+		<th><code>lighthipster</code> and <code>verylight</code></th>
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/hipster-cv/blob/master/previews/academic-cvs.png" 
-				alt="Simple Academic CV"
+			<img src="https://github.com/latex-ninja/timelinecv/blob/master/timeline-lights.png" 
+				alt="Light Hipster CV"
 				height="300"/>
 		</td>
 	</tr>			
@@ -25,12 +24,12 @@ Please replace them with your own photos and logos if you use this template!
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
-		<th><code>Version 2</code></th>
+		<th><code>allblack</code> and <code>bluebeige</code></th>
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/simple-academic-resume/blob/master/simple-acad-cv.png" 
-				alt="Simple Academic CV"
+			<img src="https://github.com/latex-ninja/timelinecv/blob/master/timeline-darks.png" 
+				alt="Light Hipster CV"
 				height="300"/>
 		</td>
 	</tr>			
